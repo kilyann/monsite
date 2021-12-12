@@ -1,0 +1,80 @@
+header{
+	background-color: rgba(255, 255, 255, 0.747);
+	border-radius:15px;
+	grid-area: hd;
+	padding-left:30px;
+	border:solid;
+	border-color: white;
+}
+
+body{
+	font-family :andika;
+	background-color:#ABB2B9;
+}
+
+img{
+	MenuText: center;
+	text-align: center;
+}
+
+a{
+	color: white;
+	MenuText:center;
+}
+ h1{
+	font-size: 15px;
+	text-align: center;
+	
+ }
+ 
+section{
+	grid-area: sec;
+}
+ 
+ footer{
+	background-color: #1B4F72;
+	margin: 0;
+	grid-area: ft;
+	border:solid;
+	border-radius:15px;
+	border-color: white;
+	text-align:center;
+ }
+ 
+ nav{
+	grid-area: na;
+	color: white;
+	background-color: #1B4F72;
+	margin: center;
+	border:solid;
+	border-radius:15px;
+	border-color: white;
+	width:50%;
+	margin-left:25%;
+	text-align:center;
+ }
+ 
+ aside{
+	grid-area: as;
+	padding: 25px;
+	background-color:#566573;
+	border:solid;
+	border-radius:15px;
+	border-color: white;
+	
+ }
+ 
+
+.wrapper{
+ display: grid;
+ grid-template-columns: 1fr 3fr 1fr;
+ grid-auto-rows: minmax(5px, auto); 
+ grid-column-gap: 10px;
+ grid-row-gap: 10px;
+ grid-template-areas: 
+	"hd hd hd"
+	"na na na"
+	"as sec sec"
+	"as sec sec"
+	"ft ft ft"; 
+}
